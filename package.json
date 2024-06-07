@@ -1,0 +1,38 @@
+{
+  "name": "react-layout-components",
+  "version": "1.0.0",
+  "description": "A collection of page components for reuse across web projects",
+  "author": "Lena Cibulski",
+  "license": "Apache-2.0",
+  "main": "lib/index",
+  "files": [
+    "/lib"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "12.7.2",
+    "@types/react": "^16.9",
+    "@types/react-dom": "^16.8.4",
+    "@types/reactstrap": "^8.5.1",
+    "css-loader": "^5.2.4",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.1",
+    "typescript": "3.6.3",
+    "webpack": "^5.36.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "peerDependencies": {
+    "bootstrap": "^4.4.1",
+    "react": ">= 16.9 || < 18",
+    "react-dom": ">= 16.9 || < 18",
+    "reactstrap": "^8.6.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "prepublish": "npm run build"
+  }
+}

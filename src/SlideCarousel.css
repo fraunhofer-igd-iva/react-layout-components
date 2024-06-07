@@ -1,0 +1,103 @@
+.fa-bars {
+    transform: rotate(90deg);
+}
+
+.carousel {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+}
+
+.carousel-item, .carousel, .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+div.indicators-container {
+    position: absolute;
+    width: 108px;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+}
+
+div.icon-item {
+    width: 30px;
+    height: 0;
+    transition: height 0.4s;
+    background: rgba(2, 143, 117, 0.7);
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.light div.icon-item {
+    color: rgb(240, 240, 240);
+}
+
+.dark div.icon-item {
+    color: rgb(33, 37, 41);
+}
+
+div.icon-item > *:first-child {
+    display: none;
+}
+
+div.icon-item.animate {
+    height: 30px;
+}
+
+div.icon-item.animate > *:first-child {
+    display: block;
+}
+
+ol.carousel-indicators {
+    position: relative;
+    height: 18px;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+ol.carousel-indicators .active{
+    background-color: rgb(239, 108, 0);
+}
+
+ol.carousel-indicators li{
+    background-color: rgb(2, 143, 117);
+    border-bottom: none;
+    border-top: none;
+    opacity: 1;
+}
+
+div.carousel-item.active{
+    font-weight: normal;
+    border-bottom: none;
+}
+
+div.parallel-coordinates-content {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-icons {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+    right: 0;
+    left: 0;
+    z-index:15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+}
